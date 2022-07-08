@@ -1,0 +1,12 @@
+name: hello-world
+on:
+  workflow_dispatch:
+
+jobs:
+  my-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: my-step
+        run: |
+          sleep 30
+          echo "Hello World!"
