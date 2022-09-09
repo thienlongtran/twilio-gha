@@ -6,7 +6,7 @@ jobs:
   my-job:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/setup-python@v4
+      - uses: actions/setup-python@v2
         with:
           python-version: 3.9
     
@@ -26,7 +26,7 @@ jobs:
     needs: my-job2
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/setup-python@v4
+      - uses: actions/setup-python@v2
         with:
           python-version: 3.9
       - name: my-step
