@@ -26,6 +26,9 @@ jobs:
     needs: my-job2
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/setup-python@v4
+          with:
+            python-version: 3.9
       - name: my-step
         run: |
           sleep 30
