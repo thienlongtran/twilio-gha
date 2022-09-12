@@ -3,7 +3,7 @@ on:
   workflow_dispatch:
     inputs:
       number:
-        required: true 
+        default: '+1(346)2049381'
         type: string
 
 jobs:
@@ -13,8 +13,8 @@ jobs:
       - name: 'Sending SMS Notification'
         uses: twilio-labs/actions-sms@v1
         with:
-          fromPhoneNumber: '+1(234)5678901'
-          toPhoneNumber: '+1(234)3334444'
+          fromPhoneNumber: '+1(314)8873826'
+          toPhoneNumber: '${{ inputs.number }} '
           message: 'Hello from Twilio'
         env:
           TWILIO_ACCOUNT_SID: ${{ secrets.TWILIO_ACCOUNT_SID }}
