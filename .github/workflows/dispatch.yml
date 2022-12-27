@@ -6,7 +6,14 @@ on:
         default: "+1(346)2049381"
         type: string
       message:
-        default: "Hello World!"
+        default: "Congratulations Privateer!
+
+        As a student of the University of New Orleans, you have been nominated for the position of “King of Fucking Bitches and Getting Money”. An election will commence on March 12, 2023 where you will run against seven other men, one of whom has a Cinnamon addiction, for this coveted title.
+
+        We wish you the best of luck in this endeavor.
+
+        Reply “STOP” to discontinue future messages.
+        "
         type: string
 
 jobs:
