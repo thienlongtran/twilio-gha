@@ -13,13 +13,8 @@ jobs:
   my-job:
     runs-on: ubuntu-latest
     steps:
+      - uses: ahmadnassri/action-workflow-queue@v1
       - name: "Sending SMS Notification"
-        uses: twilio-labs/actions-sms@v1
-        with:
-          fromPhoneNumber: "+1(314)8873826"
-          toPhoneNumber: "${{ inputs.number }} "
-          message: ${{ inputs.message }}
-        env:
-          TWILIO_ACCOUNT_SID: ${{ secrets.TWILIO_ACCOUNT_SID }}
-          TWILIO_API_KEY: ${{ secrets.TWILIO_API_KEY }}
-          TWILIO_API_SECRET: ${{ secrets.TWILIO_API_SECRET }}
+        run: echo "Hello World!!!"
+      - name: "Test"
+        run: sleep 60
